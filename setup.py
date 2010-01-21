@@ -1,8 +1,13 @@
 from setuptools import setup, find_packages
 
+VERSION = (0, 9)
+
+__version__ = VERSION
+__versionstr__ = '.'.join(map(str, VERSION))
+
 kwargs = {
     'name': 'django-threadedcomments',
-    'version': '0.9',
+    'version': __versionstr__,
     'description': 'A simple yet flexible threaded commenting system.',
     'author': 'Eric Florenzano',
     'author_email': 'floguy@gmail.com',
